@@ -69,8 +69,8 @@ const styles = StyleSheet.create({
   row: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16 },
   rowItem: { fontSize: 14, fontWeight: '700', color: '#0A0A0A', flex: 1, paddingRight: 16 },
   rowPrice: { fontSize: 14, fontWeight: '700', color: '#0A0A0A' },
-  totalBlock: { borderTopWidth: 2, borderColor: '#0A0A0A', paddingTop: 16, marginTop: 16, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' },
-  totalLabel: { fontSize: 16, fontWeight: '900', color: '#0A0A0A', letterSpacing: 1 },
+  totalBlock: { borderTopWidth: 2, borderColor: '#0A0A0A', paddingTop: 16, marginTop: 16, marginBottom: 18, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' },
+  totalLabel: { fontSize: 32, fontWeight: '900', color: '#0A0A0A', letterSpacing: 1 },
   totalValue: { fontSize: 32, fontWeight: '900', color: '#E63946', letterSpacing: -1 },
   checkoutBtn: { backgroundColor: '#0A0A0A', padding: 20, alignItems: 'center' },
   checkoutText: { color: '#FAFAFA', fontSize: 14, fontWeight: '900', letterSpacing: 2 }
