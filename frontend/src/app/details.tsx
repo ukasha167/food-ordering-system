@@ -26,7 +26,7 @@ export default function DetailsScreen() {
       <View style={styles.body}>
         <View style={styles.headerBox}>
           <Text style={styles.title}>{String(item.name).toUpperCase()}</Text>
-          <Text style={styles.price}>RS. {price.toFixed(0)}</Text>
+          <Text style={styles.price}>RS. {(price * qty).toFixed(0)}</Text>
         </View>
 
         <Text style={styles.desc}>{item.description}</Text>
@@ -52,12 +52,12 @@ const styles = StyleSheet.create({
   back: { position: 'absolute', top: 60, left: 20, zIndex: 10 },
   backText: { fontSize: 12, fontWeight: '900', color: '#0A0A0A', letterSpacing: 1, backgroundColor: '#FAFAFA', padding: 8, borderWidth: 2 },
   hero: { width: '100%', height: '55%', resizeMode: 'cover' },
-  body: { flex: 1, padding: 24, justifyContent: 'space-between' },
+  body: { flex: 1, paddingHorizontal: 24, paddingTop: 24, paddingBottom: 48 },
   headerBox: { borderBottomWidth: 2, borderColor: '#0A0A0A', paddingBottom: 16, marginBottom: 16 },
   title: { fontSize: 32, fontWeight: '900', color: '#0A0A0A', letterSpacing: -1, lineHeight: 36 },
   price: { fontSize: 20, fontWeight: '700', color: '#E63946', marginTop: 8 },
   desc: { fontSize: 16, fontWeight: '400', color: '#0A0A0A', lineHeight: 24 },
-  controls: { flexDirection: 'row', gap: 16 },
+  controls: { flexDirection: 'row', gap: 16, marginTop: 'auto' },
   stepper: { flexDirection: 'row', alignItems: 'center', borderWidth: 2, borderColor: '#0A0A0A', paddingHorizontal: 16 },
   stepBtn: { fontSize: 24, fontWeight: '900', color: '#0A0A0A', paddingHorizontal: 12 },
   stepVal: { fontSize: 18, fontWeight: '900', width: 30, textAlign: 'center' },
